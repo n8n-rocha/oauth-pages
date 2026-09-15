@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Automatic email classification</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                     Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .container {
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.30);
+        max-width: 900px;
+        width: 100%;
+        padding: 60px 40px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: #333333;
+        margin-bottom: 10px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .subtitle {
+        color: #667eea;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+
+    .description {
+        color: #555555;
+        line-height: 1.8;
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+
+    .features {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 30px;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .feature-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .feature-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .feature-icon {
+        font-size: 24px;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+
+    .feature-content h3 {
+        color: #333333;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .feature-content p {
+        color: #666666;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .privacy-notice {
+        background: #e8f4f8;
+        border-left: 4px solid #667eea;
+        padding: 20px;
+        border-radius: 4px;
+        margin-bottom: 40px;
+        text-align: left;
+        font-size: 14px;
+        color: #444444;
+        line-height: 1.7;
+    }
+
+    .privacy-notice strong {
+        color: #333333;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 30px;
+        border-top: 1px solid #eeeeee;
+        flex-wrap: wrap;
+    }
+
+    .footer-link {
+        color: #667eea;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .footer-link:hover {
+        color: #764ba2;
+        text-decoration: underline;
+    }
+
+    .contact {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #eeeeee;
+        font-size: 13px;
+        color: #888888;
+    }
+
+    .contact a {
+        color: #667eea;
+        text-decoration: none;
+    }
+
+    .contact a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            padding: 40px 25px;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        .features {
+            padding: 22px;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+<main class="container">
+
+<div class="logo">🔐</div>
+
+<h1>Automatic email classification</h1>
+
+<div class="subtitle">
+    Application personnelle et privée
+</div>
+
+<div class="description">
+    <p>
+        Automatic email classification est une application personnelle
+        permettant d'automatiser le traitement et le classement des
+        emails Gmail à l'aide de Google OAuth 2.0.
+    </p>
+</div>
+
+<section class="features">
+
+    <div class="feature-item">
+        <div class="feature-icon">📧</div>
+        <div class="feature-content">
+            <h3>Accès Gmail sécurisé</h3>
+            <p>
+                L'application utilise Google OAuth 2.0 afin d'autoriser
+                de manière sécurisée l'accès aux fonctionnalités Gmail
+                nécessaires à son fonctionnement.
+            </p>
+        </div>
+    </div>
+
+    <div class="feature-item">
+        <div class="feature-icon">🔒</div>
+        <div class="feature-content">
+            <h3>Traitement local</h3>
+            <p>
+                Les workflows d'automatisation sont exécutés localement
+                avec n8n. Les traitements d'intelligence artificielle
+                peuvent être réalisés localement avec Ollama.
+            </p>
+        </div>
+    </div>
+
+    <div class="feature-item">
+        <div class="feature-icon">👤</div>
+        <div class="feature-content">
+            <h3>Usage exclusivement personnel</h3>
+            <p>
+                L'application est destinée exclusivement à son propriétaire.
+                Elle n'est actuellement pas proposée au public et aucun
+                autre utilisateur n'est autorisé à l'utiliser.
+            </p>
+        </div>
+    </div>
+
+    <div class="feature-item">
+        <div class="feature-icon">⚙️</div>
+        <div class="feature-content">
+            <h3>Classement automatisé</h3>
+            <p>
+                Les emails peuvent être analysés et classés
+                automatiquement selon une organisation définie
+                par le propriétaire de l'application.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<div class="privacy-notice">
+    <strong>🛡️ Confidentialité et données Google</strong><br><br>
+
+    Automatic email classification est une application personnelle
+    et privée. Les données Google accessibles par l'application sont
+    utilisées uniquement pour fournir les fonctionnalités de traitement
+    et de classement des emails.
+
+    <br><br>
+
+    Les données ne sont pas vendues, louées ou utilisées à des fins
+    publicitaires. Elles ne sont pas partagées avec des tiers pour
+    leurs propres besoins indépendants de l'application.
+
+    <br><br>
+
+    L'application est conçue pour respecter les exigences applicables
+    de la <strong>Google API Services User Data Policy</strong>,
+    y compris la <strong>Limited Use Policy</strong> lorsque celle-ci
+    s'applique.
+</div>
+
+<nav class="footer-nav" aria-label="Navigation légale">
+
+    <a href="/privacy" class="footer-link">
+        📋 Politique de confidentialité
+    </a>
+
+    <a href="/terms" class="footer-link">
+        📜 Conditions d'utilisation
+    </a>
+
+</nav>
+
+<div class="contact">
+    Pour toute question :
+    <a href="mailto:rr.invictaxial@gmail.com">
+        rr.invictaxial@gmail.com
+    </a>
+</div>
+
+</main>
+
+</body>
+</html>
